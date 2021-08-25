@@ -1,4 +1,4 @@
-"Mark43 Poker" Judger
+"Poker" Judger
 =====================
 
 Your task is to implement a program that judges a game of three-card poker.
@@ -65,7 +65,7 @@ the correct output would be:
 ```
 as those two players have equivalent hands (flushes, with a ten, a nine, and a three).
 
-"Mark43 Poker" Rules
+"Poker" Rules
 ----------------------
 
 The winner of a round of  is the player with the best hand. The possible types of hands, ranked best to worst, are as follows:
@@ -86,33 +86,5 @@ When comparing hands of the same type, the winner is the hand whose highest card
 
 The exception to this comes when comparing pairs. If two hands are both a pair, the winning hand is the hand that has a higher pair. For example `8c 8h 4d` beats `5s 5h 2h` because the pair of `8`s beats the pair of `5`s. If the pair is tied, then the remaining card is used to decide the winner.  (Fun fact, the "extra" cards in a poker hand that are not part of the hand ranking but are used to break ties are called "kickers".)
 
-Mark43 poker is actually just 3 Card Poker. You can read more about it [in this wikipedia article.](https://en.wikipedia.org/wiki/Three_card_poker) For a clear list of hand rankings, see [this page](https://www.table-games-online.com/3-card-poker/hand_ranking.html).
+This poker is actually just 3 Card Poker. You can read more about it [in this wikipedia article.](https://en.wikipedia.org/wiki/Three_card_poker) For a clear list of hand rankings, see [this page](https://www.table-games-online.com/3-card-poker/hand_ranking.html).
 
-Using the test runner
-----------------------
-
-We have provided the test runner that we will use to check your solution, along with two sample tests. We have many more tests that we will run internally, so passing the two we sent *does not* imply that your solution is correct/complete.
-
-To run the tests, first perform any compilation or preprocessing that your solution requires, then use the `run_tests` python script and pass the command that runs your program in as a string argument. For example, if your program is a python file called `poker.py` that you invoke with `python poker.py`, then you would run `./run_tests "python poker.py"`. Or, if your program is Java code that you have compiled to `Poker.class` and invoke with `java Poker`, you would run `./run_tests "java Poker"`.  Make sure you run this from the directory where the `run_tests` script and `tests` directory are located.
-
-The `run_tests` script uses Python 3, so you may need to invoke it with `python3 ./run_tests "<your command>"` if your installed version of `python` points to Python 2.  (In which case, you should also upgrade it to Python 3 because [Python 2 was end-of-lifed on 1 January, 2020](https://pythonclock.org)).
-
-Feel free to reach out to us if you have any problems using the test runner.
-
-What to submit
---------------
-
-Your submission **must** be a **zip file** containing the following:
-
-* the source code of your program
-* a plain text file titled `README` containing
-    * detailed instructions for compiling and/or running your submission.  (The person grading your submission may be unfamiliar with the language you used, so be explicit here).  
-    * a brief note about design decisions and known bugs or limitations in your submission.
-
-If your submission requires a multi-step or otherwise complex compilation process, you **should** include a `Makefile` or other build script.
-
-Your program **must** be able to run all of the included tests using our `run_tests` script as described above. We will use this exact script to grade your test, so if your submission doesn't run with `run_tests` for you, then it won't run for us.
-
-Your submission **must not** contain your name in any file, as we use a blind grading process.
-
-Your submission **should not** contain any compiled code.  We want to compile your submission ourselves.  If you have a good reason for including compiled code, you **should**  explain in your `README`.
